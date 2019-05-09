@@ -10,9 +10,9 @@ doorImage1.onclick = () => {
 };
 
 doorImage2.onclick = () => {
-
+  doorImage2.src = beachDoorPath;
 };
 
 doorImage3.onclick = () => {
-
+  doorImage3.src = spaceDoorPath;
 };
