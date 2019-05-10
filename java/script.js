@@ -5,6 +5,11 @@ const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-
 const beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
 const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 
+const randomChoreDoorGenerator = () => {
+  numClosedDoors = 3;
+  choreDoor = Math.floor(Math.random() * numClosedDoors);
+};
+
 doorImage1.onclick = () => {
   doorImage1.src = botDoorPath;
 };
