@@ -5,6 +5,7 @@ const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-
 const beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
 const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
 const closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"
+const startButton = document.getElementById('start')
 let openDoor1;
 let openDoor2;
 let openDoor3;
@@ -61,6 +62,12 @@ doorImage3.onclick = () => {
   doorImage3.src = openDoor3;
   playDoor();
   };
+};
+
+const gameOver = status => {
+  if (status === 'win') {
+    startButton.innerHTML = 'You win! Play again?'
+  }
 };
 
 randomChoreDoorGenerator();
