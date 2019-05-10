@@ -21,7 +21,7 @@ const isClicked = door => {
 const playDoor = () => {
   numClosedDoors -= 1;
   if (numClosedDoors === 0) {
-    gameOver();
+    gameOver('win');
   };
 };
 
