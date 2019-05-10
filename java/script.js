@@ -45,15 +45,13 @@ const randomChoreDoorGenerator = () => {
 doorImage1.onclick = () => {
   if (!isClicked(doorImage1)) {
   doorImage1.src = openDoor1;
-  } else {
-    playDoor();
+  playDoor();
   };
 };
 
 doorImage2.onclick = () => {
   if (!isClicked(doorImage2)) {
   doorImage2.src = openDoor2;
-  } else {
   playDoor();
   };
 };
@@ -61,7 +59,6 @@ doorImage2.onclick = () => {
 doorImage3.onclick = () => {
   if (!isClicked(doorImage3)) {
   doorImage3.src = openDoor3;
-  } else {
   playDoor();
   };
 };
