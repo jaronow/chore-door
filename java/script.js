@@ -4,9 +4,18 @@ let doorImage3 = document.getElementById('door3');
 const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
 const beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
 const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
+const closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"
 let openDoor1;
 let openDoor2;
 let openDoor3;
+
+const isClicked = door => {
+  if (door === closedDoorPath) {
+    return false;
+  } else {
+    return true;
+  };
+};
 
 const playDoor = () => {
   numClosedDoors -= 1;
