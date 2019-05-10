@@ -11,7 +11,7 @@ let openDoor2;
 let openDoor3;
 
 const isClicked = door => {
-  if (door === closedDoorPath) {
+  if (door.src === closedDoorPath) {
     return false;
   } else {
     return true;
